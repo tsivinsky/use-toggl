@@ -1,7 +1,7 @@
 {
   "name": "use-toggl",
   "description": "React hook for toggling between 2 values rather than boolean",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/use-toggle.cjs",
   "module": "dist/use-toggle.esm.js",
   "license": "MIT",
