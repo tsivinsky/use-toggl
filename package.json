@@ -4,6 +4,7 @@
   "version": "0.0.2",
   "main": "dist/use-toggle.cjs",
   "module": "dist/use-toggle.esm.js",
+  "types": "./dist/index.d.ts",
   "license": "MIT",
   "author": {
     "name": "Daniil Tsivinsky",
