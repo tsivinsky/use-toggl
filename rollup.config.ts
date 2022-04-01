@@ -16,5 +16,5 @@ export default defineConfig({
       sourcemap: true,
     },
   ],
-  plugins: [typescript()],
+  plugins: [typescript({ tsconfig: "./tsconfig.json" })],
 });
