@@ -1,0 +1,47 @@
+{
+  "name": "use-toggl",
+  "description": "React hook for toggling between 2 values rather than boolean",
+  "version": "0.0.0",
+  "main": "dist/use-toggle.cjs",
+  "module": "dist/use-toggle.esm.js",
+  "license": "MIT",
+  "author": {
+    "name": "Daniil Tsivinsky",
+    "url": "https://tsivinsky.com",
+    "email": "daniil@tsivinsky.com"
+  },
+  "keywords": [
+    "react",
+    "react-hook",
+    "react-hooks"
+  ],
+  "scripts": {
+    "format": "prettier -w src/",
+    "clean": "rimraf ./dist",
+    "prebuild": "yarn clean",
+    "build": "rollup -c",
+    "prepublishOnly": "yarn build"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/use-toggle.cjs",
+      "import": "./dist/use-toggle.esm.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@types/react": "^17.0.43",
+    "prettier": "^2.6.1",
+    "react": "^18.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.70.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17 || ^18"
+  }
+}
