@@ -15,7 +15,7 @@ npm i use-toggl
 ### Usage
 
 ```tsx
-import { useToggl } from "use-toggle";
+import { useToggl } from "use-toggl";
 
 export const Component = () => {
   const [currentValue, isGood, isBad, toggle] = useToggl(["good", "bad"]);
